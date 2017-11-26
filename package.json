@@ -1,6 +1,7 @@
 {
   "name": "surumen.com",
   "version": "0.1.0",
+  "homepage": "https://surumen.github.io/surumen.com",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -53,11 +54,13 @@
     "start": "NODE_ENV=production react-scripts start",
     "start:server": "node server",
     "build": "NODE_ENV=production react-scripts build",
+    "deploy" : "npm run build && gh-pages -d build",
     "eject": "react-scripts eject",
     "test": "mocha test"
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "gh-pages": "^1.1.0",
     "mocha": "^4.0.1",
     "mz": "^2.7.0",
     "supertest": "^3.0.0",
