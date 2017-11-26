@@ -7,7 +7,7 @@ import {
 
 import App from './components/App';
 import About from './components/About';
-import NotFound from './components/NotFound';
+// import NotFound from './components/NotFound';
 import Blog from './components/Blog';
 
 const Routes = (props) => (
