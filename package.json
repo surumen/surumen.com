@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "start:server": "node server",
-    "build": "react-scripts build && rm build/static/js/*.map",
+    "build": "react-scripts build && rm build/**",
     "postbuild": "npm ./delete-maps.js",
     "eject": "react-scripts eject",
     "test": "mocha test"
