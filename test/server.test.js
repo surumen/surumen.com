@@ -38,5 +38,3 @@ describe('express serving', function () {
       .then(res => expect(res.text).to.contain('<div id="root"></div>'));
   });
 });
-
-
