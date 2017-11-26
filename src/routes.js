@@ -16,7 +16,6 @@ const Routes = (props) => (
       <Route exact path="/" component={App}/>
       <Route path="/about" component={About}/>
       <Route path="/blog/facial_recognition" component={Blog}/>
-      <Route path="*" component={NotFound}/>
     </div>
   </Router>
 );
