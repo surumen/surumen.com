@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
   
   <meta name="theme-color" content="#5953FF">
   <meta name="msapplication-navbutton-color" content="#5953FF">
@@ -37,6 +36,11 @@
   <meta property="og:image" content="assets/images/geometric-pattern-small.png" />
   <meta property="og:description" content="The personal website of Moses Surumen. Electrical Engineering and Computer Science senior @UC-Berkeley." />
   <script src="scripts/main.js" charset="utf-8"></script>
+  <script>
+    if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
+            __REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+    }
+  </script>
 </head>
 
 <body class="overflow-x-hidden">
