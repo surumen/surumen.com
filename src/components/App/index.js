@@ -35,7 +35,7 @@ class App extends Component {
           </div>
         </div>
         <div id="barba-wrapper">
-          <div className="barba-container mt3" data-namespace="home">
+          <div className="barba-container mt3 mh4-left" data-namespace="home">
             <div className="toc">
                 <a className="pv3 ph4 ph5-l flex items-baseline no-underline" href="/blog/facial_recognition">
                   <span className="repo-language-color pinned-repo-meta" style={{backgroundColor: '#3572A5'}} />
