@@ -42,10 +42,10 @@ class App extends Component {
                   <span className="f7 mr4 mono tracked silver language">&nbsp;&nbsp;Python</span> 
                   <span className="title dib b">Facial Recognition using Support Vector Machines and eigenfaces</span>
                 </a>
-                <a className="pv3 ph4 ph5-l flex items-baseline no-underline" href>
+                <a className="pv3 ph4 ph5-l flex items-baseline no-underline" href="https://chezo.herokuapp.com/">
                   <span className="repo-language-color pinned-repo-meta" style={{backgroundColor: '#5e5086'}} />
                   <span className="f7 mr4 mono tracked silver language">&nbsp;&nbsp;JavaScript</span> 
-                  <span className="title dib b">Google Chrome weather extension</span>
+                  <span className="title dib b">Chess</span>
                 </a>
                 <a className="pv3 ph4 ph5-l flex items-baseline no-underline" href>
                   <span className="repo-language-color pinned-repo-meta" style={{backgroundColor: '#5e5086'}} />
