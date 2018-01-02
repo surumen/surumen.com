@@ -184,7 +184,8 @@ module.exports = {
                       options: {
                         importLoaders: 1,
                         minimize: true,
-                        sourceMap: shouldUseSourceMap,
+                        // sourceMap: shouldUseSourceMap,
+                        sourceMap: false,
                       },
                     },
                     {
@@ -283,7 +284,8 @@ module.exports = {
         // https://github.com/facebookincubator/create-react-app/issues/2488
         ascii_only: true,
       },
-      sourceMap: shouldUseSourceMap,
+      //sourceMap: shouldUseSourceMap,
+      sourceMap: false,
     }),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
     new ExtractTextPlugin({
