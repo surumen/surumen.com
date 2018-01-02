@@ -1,7 +1,7 @@
 {
   "name": "surumen.com",
   "version": "0.1.0",
-  "homepage": "https://surumen.github.io/surumen.com",
+  "homepage": "https://surumen.herokuapp.com",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
