@@ -53,8 +53,8 @@
   "scripts": {
     "start": "react-scripts start",
     "start:server": "node server",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "build": "react-scripts build && rm build/static/js/*.map",
+    "predeploy": "npm run build && rm build/static/js/*.map",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "test": "mocha test"
