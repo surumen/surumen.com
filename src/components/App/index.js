@@ -103,7 +103,7 @@ class App extends Component {
                 </a>
               </div>
               <div className>
-                © 2017 Moses Surumen
+                &copy; 2018 Moses Surumen
               </div>
             </div>
           </div>
