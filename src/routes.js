@@ -5,9 +5,11 @@ import {
   Route
 } from 'react-router-dom'
 
+// <Route path="/history/reflection" component={Fun}/>
+
 import App from './components/App';
 import About from './components/About';
-// import NotFound from './components/NotFound';
+// import Fun from './components/Fun';
 import Blog from './components/Blog';
 
 const Routes = (props) => (
