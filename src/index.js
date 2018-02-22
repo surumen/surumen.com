@@ -10,4 +10,4 @@ ReactDOM.render(
   <Routes history={browserHistory} />,
   document.getElementById('root')
 );
-register();
+registerServiceWorker();
