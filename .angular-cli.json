@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "my-app"
+    "name": "surumen-new"
   },
   "apps": [
     {
@@ -21,7 +21,13 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/js/jquery.js",
+        "assets/js/jquery-1.12.0.min.js",
+        "assets/js/scroll.js",
+        "assets/js/jquery.min.js",
+        "assets/js/flickity.pkgd.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
