@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('surumen-new App', () => {
+describe('surumen.com App', () => {
   let page: AppPage;
 
   beforeEach(() => {

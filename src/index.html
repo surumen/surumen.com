@@ -1,24 +1,223 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>Moses Surumen | Home</title>
-	<meta name="description" content="Software engineer interested in front-end & backend web development, computer graphics, machine learning, and artificial intelligence. Find me on Github @surumen">
-	<meta name="keywords" content="Moses Surumen,Surumen,moses, software engineer, data scientist">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://www.surumen.com">
-	<meta property="og:site_name" content="Moses Surumen">
-	<meta property="og:title" content="Moses Surumen">
-	<meta property="og:image" content="assets/Moses.png">
-	<meta property="og:description" content="Software engineer interested in front-end & backend web development, computer graphics, machine learning, and artificial intelligence. Find me on Github @surumen">
-	<base href="./">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <title>Surumen.me</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body,
+    html {
+        padding-top: .2rem;
+        font-family: 'Fira Code', monospace;
+        font-size: 2vw
+    }
+
+    @media screen and (min-width:1024px) {
+        body,
+        html {
+            font-size: 20px
+        }
+    }
+
+    body {
+        --color-background: #262626;
+        --color-white-space: #464741;
+        --color-collapsed: #464741;
+        --color-comment: #75715E;
+        --color-variable: #Fff;
+        --color-expression: #F8F8F2;
+        --color-storage-type: #5f87d7;
+        --color-keyword: #d75faf;
+        --color-type: #A6E22E;
+        --color-class: #00af87;
+        --color-string: #E6DB74;
+        --color-constant: #AE81FF;
+        --color-number: #AE81FF;
+        --color-zsh-text: #4cd964;
+        --color-zsh-path-background: #d7af00;
+        --color-zsh-path-foreground: #000;
+        --color-zsh-branch-background: #767676;
+        --color-zsh-branch-foreground: #d7af00;
+        --color-zsh-command-valid: #4cd964;
+        --color-zsh-command-invalid: #ff3b30;
+        --color-zsh-args: #cdd;
+        --color-zsh-args-autocomplete: #566;
+        margin: .3rem;
+        background-color: var(--color-background)
+    }
+
+    .hidden {
+        display: none
+    }
+
+    .loader {
+        color: var(--color-zsh-text);
+        font-size: 0;
+        padding-bottom: .5rem
+    }
+
+    .loader .now {
+        display: inline
+    }
+
+    .loader span {
+        font-size: 1rem
+    }
+
+    .loader .branch:before,
+    .loader .command:before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border: .6rem solid transparent;
+        vertical-align: -.25rem
+    }
+
+    .loader .path {
+        background-color: var(--color-zsh-path-background);
+        color: var(--color-zsh-path-foreground);
+        padding-right: 1rem
+    }
+
+    .loader .branch {
+        background-color: var(--color-zsh-branch-background);
+        color: var(--color-zsh-branch-foreground);
+        padding-right: 1rem
+    }
+
+    .loader .branch:before {
+        border-left-color: var(--color-zsh-path-background)
+    }
+
+    .loader .command:after {
+        color: var(--color-zsh-command-valid)
+    }
+
+    .loader .command:before {
+        border-left-color: var(--color-zsh-branch-background)
+    }
+
+    .loader .args:before {
+        padding-left: 1rem;
+        color: var(--color-zsh-args)
+    }
+
+    .loader .args:after {
+        color: var(--color-zsh-args-autocomplete)
+    }
+
+    .step-1 .loader .command:after {
+        content: 'c';
+        color: var(--color-zsh-command-invalid)
+    }
+
+    .step-2 .loader .command:after {
+        content: 'ca';
+        color: var(--color-zsh-command-invalid)
+    }
+
+    .step-3 .loader .command:after {
+        content: 'cat'
+    }
+
+    .step-4 .loader .command:after {
+        content: 'cat'
+    }
+
+    .step-4 .loader .args:before {
+        content: 'm'
+    }
+
+    .step-4 .loader .args:after {
+        content: 'ain.ts'
+    }
+
+    .step-5 .loader .command:after {
+        content: 'cat'
+    }
+
+    .step-5 .loader .args:before {
+        content: 'ma'
+    }
+
+    .step-5 .loader .args:after {
+        content: 'in.ts'
+    }
+
+    .step-6 .loader .command:after {
+        content: 'cat'
+    }
+
+    .step-6 .loader .args:before {
+        content: 'main.ts'
+    }
+
+    .step-7 .loader .command:after {
+        content: 'cat'
+    }
+
+    .step-7 .loader .args:before {
+        content: 'main.ts'
+    }
+
+    .step-7 #view {
+        display: block
+    }
+
+    .lang-ruby.step-4 .loader .args:after {
+        content: 'ain.rb'
+    }
+
+    .lang-ruby.step-5 .loader .args:after {
+        content: 'in.rb'
+    }
+
+    .lang-ruby.step-6 .loader .args:before {
+        content: 'main.rb'
+    }
+
+    .lang-ruby.step-7 .loader .args:before {
+        content: 'main.rb'
+    }
+
+    .lang-javascript.step-4 .loader .args:after {
+        content: 'ain.js'
+    }
+
+    .lang-javascript.step-5 .loader .args:after {
+        content: 'in.js'
+    }
+
+    .lang-javascript.step-6 .loader .args:before {
+        content: 'main.js'
+    }
+
+    .lang-javascript.step-7 .loader .args:before {
+        content: 'main.js'
+    }
+    </style>
 </head>
 <body>
+	<noscript>Please enable JavaScript to see this page!</noscript>
+    <div class="loader hidden">
+        <div class="line"><span>Last login:<span class="now"></span>on <span id="demo"></span></span>
+        </div>
+        <div class="line"><span class="path">~/surumen.com</span><span class="branch"> master</span><span class="command"></span><span class="args"></span></div>
+    </div>
+    <script type="text/javascript">
+    var $loader = document.querySelector(".loader"),
+        $now = document.querySelector(".now"),
+        $body = document.body;
+    $now.innerHTML = " " + (new Date).toString().substr(0, 24) + " ", $loader.classList.remove("hidden");
+    for (var i = 1; i <= 7; i++) ! function(e) { setTimeout(function() { $body.classList.remove("step-" + (e - 1)), $body.classList.add("step-" + e) }, 250 * e + ~~(50 * Math.random())) }(i)
+    </script>
+    <div id="view" class="hidden"></div>
   <app-root></app-root>
-
-  <!-- ScriptSmooth Scroll -->
-<!-- End Script Smooth Scroll -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css">
+    <script type="text/javascript" src="assets/main.js"></script>
 </body>
 </html>
