@@ -113,7 +113,7 @@ var minifyOptions = {
 };
 
 /// Export
-const title = '~/taminomartinius.de/main.ts';
+const title = '~/surumen.com';
 const path = '/';
 
 const transform = (content, filePath) => {

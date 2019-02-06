@@ -196,7 +196,7 @@ export const skills: SkillSet[] = [
     ],
   },
   {
-    title: 'API Paradigms',
+    title: 'APIs',
     data: { graphql, rest },
   },
   {
