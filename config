@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export AWS_BUCKET_NAME=""
+export AWS_REGION=""
+export AWS_PROFILE=""
+export AWS_CLOUDFRONT_ID=""
