@@ -19,15 +19,11 @@ export const state = new State();
 *********/
 
 export const myName = 'Moses Surumen';
-export const profession = 'Software Engineer | Data Scientist';
+export const profession = 'Software Engineer';
 export const street = 'UC Berkeley';
 export const postalCode = 'CA';
 export const city = 'Berkeley';
-export const emails: string[] = [
-  'msurumen@berkeley.edu',
-  'moses.susrumen@gmail.com',
-  'msurumen@berkeley.edu',
-];
+export const emails: string[] = ['msurumen@berkeley.edu'];
 export const socialNetworks: { [key: string]: string } = {
   github: 'https://github.com/surumen',
   behance: 'https://www.behance.net/msurumen1180',
@@ -116,7 +112,7 @@ export const rest: Skill = { level: 0.9, name: 'RESTful APIs' };
 
 // JavaScript Libraries/Frameworks
 export const React: Skill = { level: 0.9, name: 'React - Front-end' };
-export const Angular: Skill = { level: 0.7, name: 'Angular - Front-end' };
+export const Angular: Skill = { level: 1.0, name: 'Angular - Front-end' };
 export const Vue: Skill = { level: 0.9, name: 'Vue - Front-end' };
 export const Redux: Skill = { level: 0.8, name: 'Redux - State management' };
 export const Mobx: Skill = { level: 0.7, name: 'Mobx - State management' };
@@ -226,6 +222,22 @@ export const skills: SkillSet[] = [
   }
 ];
 
+/*******
+* Experience *
+*******/
+
+export const Experience: ShowCase[] = [
+  {
+    name: 'Qualcomm',
+    role: `Senior Software Developer.`,
+    startsAt: new Date('2019-08-19'),
+    endsAt: 'present',
+    urls: [
+      'https://www.qualcomm.com/licensing',
+    ],
+  },
+];
+
 
 /*******************
 * Education *
@@ -254,12 +266,10 @@ export const education: (Education)[] = [
     graduation: new Date('2019-05-18'),
     major: 'BSc. Electrical Engineering and Computer Science',
     activities: [
-      'National Society of Black Engineers (NSBE), Northern California Chapter',
       'Big Ideas @ Berkeley',
       'MasterCard Foundation Scholars Program',
       'Computer Science Scholars',
       'Cal Hacks',
-      'BESSA - K-12 Bay Area students STEM mentorship',
       'The Berkeley Project - community service club'
     ]
   },
@@ -273,7 +283,7 @@ export const education: (Education)[] = [
 
 export const projects: ShowCase[] = [
   {
-    name: 'Mixtape Generator',
+    name: 'Mixtape GPT',
     description: `
       A music recommendation system built from a weighted network of one million songs.
     `,
@@ -293,47 +303,6 @@ export const projects: ShowCase[] = [
       vuejs,
     },
   },
-
-  {
-    name: 'Developer Circles',
-    description: `
-      A realtime chat and events app that allows developers to connect with others in their cities.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: undefined,
-    urls: [
-      'https://github.com/surumen/dev-circles.git',
-    ],
-    media: [],
-    skills: {
-      react,
-      Redux,
-      graphql,
-      s3,
-      cloudfront,
-      nodejs,
-      stylus
-    },
-  },
-
-  {
-    name: 'Book Search',
-    description: `
-      A mobile app that interacts with the Goodreads API to display info on books and authors.
-    `,
-    startsAt: new Date('2019'),
-    endsAt: undefined,
-    urls: [
-      'https://github.com/surumen/book-search/',
-    ],
-    media: [],
-    skills: {
-      ReactNative,
-      Redux,
-      ElasticSearch
-    },
-  },
-
   {
     name: 'Face Swap',
     description: `
@@ -347,67 +316,6 @@ export const projects: ShowCase[] = [
     media: [],
     skills: {
       
-    },
-  },
-
-  {
-    name: 'News Verifier',
-    description: `
-      A web app that takes user queries and verifies the available credible news on the subject
-      by searching for relevant articles on the New York Times.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: undefined,
-    urls: [
-      'https://github.com/surumen/news/',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-
-  {
-    name: 'Pop Songs Network',
-    description: `
-      D3.js web visualization of similarities between popular songs in three major streaming platforms
-    `,
-    startsAt: new Date('2018'),
-    endsAt: new Date('2018'),
-    urls: [
-      'https://github.com/surumen/pop-songs-network',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-
-  {
-    name: 'NBA Fan Updates',
-    description: `
-      Angular web app that uses a python web scraper to display hot NBA news from different websites.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: new Date('2018'),
-    urls: [
-      'https://github.com/surumen/nba-updates',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-
-  {
-    name: 'Maps',
-    description: `
-      A java mapping application built using OpenStreetMap vector tiles.
-    `,
-    startsAt: new Date('2016'),
-    endsAt: new Date('2016'),
-    urls: [
-      'https://github.com/surumen/maps',
-    ],
-    media: [],
-    skills: {
     },
   },
   {
@@ -426,76 +334,6 @@ export const projects: ShowCase[] = [
     },
   },
   {
-    name: 'Video Processor',
-    description: `
-      A video processing application that separates foreground and background information from a video.
-    `,
-    startsAt: new Date('2017'),
-    endsAt: new Date('2017'),
-    urls: [
-      'https://github.com/surumen/video-processor',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-  {
-    name: 'Boba Maker',
-    description: `
-      Angular app to visualize various bubble tea recipes using D3.js and ngrx.
-    `,
-    startsAt: new Date('2017'),
-    endsAt: new Date('2017'),
-    urls: [
-      'https://github.com/surumen/bubble-tea/',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-  {
-    name: 'Sun Tracker',
-    description: `
-      Follow the sunrise through major cities around the world.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: new Date('2018'),
-    urls: [
-      'https://github.com/surumen/sun-track/',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-  {
-    name: 'Internet Radio',
-    description: `
-      A radio streaming web player built with Vue.js.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: new Date('2018'),
-    urls: [
-      'https://github.com/surumen/internet-radio/',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-  {
-    name: 'Groovy',
-    description: `
-      Web audio analyzer that displays the waveform/frequency of the beats in a song.
-    `,
-    startsAt: new Date('2018'),
-    endsAt: new Date('2018'),
-    urls: [
-      'https://github.com/surumen/groovy/',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-  {
     name: 'Chess.ai',
     description: `
       Chess web player that supports a human player against an intelligent machine player.
@@ -508,67 +346,5 @@ export const projects: ShowCase[] = [
     media: [],
     skills: {
     },
-  }
-];
-
-
-/*******
-* ExtraCurricular *
-*******/
-
-export const ExtraCurricular: ShowCase[] = [
-  {
-    name: 'The Resolution Project',
-    description: `
-      Started a non-profit to help students from underprivileged communities get a headstart in computer science.
-    `,
-    startsAt: new Date('2016'),
-    endsAt: undefined,
-    urls: [
-      'https://www.resolutionproject.org/fellows/moses-surumen',
-    ],
-    media: [],
-    skills: {
-    },
-  },
-
-  {
-    name: 'BESSA Stem Outreach',
-    description: `
-      Mentorship program for K-12 Bay Area students from underrepresented communities in STEM.
-    `,
-    startsAt: new Date('2016'),
-    endsAt: new Date('2016'),
-    urls: [
-    ],
-    media: [],
-    skills: {},
-  },
-  {
-    name: 'The Berkeley Project',
-    description: `
-      Organized a large scale community service event for 1,500 volunteers that aims to
-      change the relationship between students and residents of Berkeley.
-    `,
-    startsAt: new Date('2015'),
-    endsAt: new Date('2016'),
-    urls: [
-      'https://www.berkeleyproject.org/',
-    ],
-    media: [],
-    skills: {},
-  },
-  {
-    name: 'Soccer Club Captain',
-    description: `
-      Organizes tactical plays and captains an intra-mural soccer team with 
-      other Berkeley students on weekends.
-    `,
-    startsAt: new Date('2015'),
-    endsAt: undefined,
-    urls: [
-    ],
-    media: [],
-    skills: {},
   }
 ];
