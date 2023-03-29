@@ -1,10 +1,10 @@
 import {
   Stage,
-  Job,
   Education,
   ShowCase,
   Skill,
   SkillSet,
+  Work,
   State,
 } from './data_types';
 
@@ -226,15 +226,11 @@ export const skills: SkillSet[] = [
 * Experience *
 *******/
 
-export const Experience: ShowCase[] = [
+export const Experience: Work[] = [
   {
-    name: 'Qualcomm',
-    role: `Senior Software Developer.`,
-    startsAt: new Date('2019-08-19'),
-    endsAt: 'present',
-    urls: [
-      'https://www.qualcomm.com/licensing',
-    ],
+    company: 'Qualcomm',
+    position: `Senior Software Developer.`,
+    started: new Date('2019-08-19')
   },
 ];
 

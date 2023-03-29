@@ -21,14 +21,15 @@ export const languages: Language[] = [
 export interface Stage {
   description?: string,
   startsAt?: Date,
-  endsAt: Date,
+  endsAt?: Date,
   skills?: { [key: string]: Skill },
 };
 
-export interface Job extends Stage {
+export interface Work extends Stage {
   company: string,
-  remote: boolean,
+  remote?: boolean,
   position: string | string[],
+  started?: Date,
 };
 
 export interface Education {
