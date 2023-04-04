@@ -3,7 +3,7 @@
     <Comment v-if="collapsed" :comment="`(c) ${year} Moses Surumen`">
       <Collapsed />
     </Comment>
-    <CommentBlock v-else :comment="`(c) ${year}\n\nMoses Surumen\n Berkeley, California\n`" />
+    <CommentBlock v-else :comment="`(c) ${year}\n\nMoses Surumen\n San Diego, California\n`" />
   </div>
 </template>
 

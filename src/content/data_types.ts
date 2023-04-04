@@ -3,8 +3,7 @@ export enum Section {
   Skills,
   Experience,
   Education,
-  Projects,
-  ExtraCurricular
+  Projects
 }
 
 export enum Language {
