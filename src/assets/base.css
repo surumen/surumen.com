@@ -1,0 +1,26 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-background: #262626;
+  --color-white-space: #464741;
+  --color-collapsed: #464741;
+  --color-comment: #75715e;
+  --color-variable: #fff;
+  --color-expression: #f8f8f2;
+  --color-storage-type: #5f87d7;
+  --color-keyword: #d75faf;
+  --color-type: #a6e22e;
+  --color-class: #00af87;
+  --color-string: #e6db74;
+  --color-constant: #ae81ff;
+  --color-number: #ae81ff;
+
+  --color-zsh-text: #4cd964;
+  --color-zsh-path-background: #d7af00;
+  --color-zsh-path-foreground: #000;
+  --color-zsh-branch-background: #767676;
+  --color-zsh-branch-foreground: #d7af00;
+  --color-zsh-command-valid: #4cd964;
+  --color-zsh-command-invalid: #ff3b30;
+  --color-zsh-args: #cdd;
+  --color-zsh-args-autocomplete: #566;
+}
