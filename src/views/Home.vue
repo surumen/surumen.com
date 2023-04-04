@@ -19,11 +19,11 @@
     <CodeLine />
     <CodeLine />
     <ShowCaseSection :section="Section.Projects" name="projects" :data="data.projects" />
-    <ShowCaseSection
-        :section="Section.ExtraCurricular"
-        name="ExtraCurricular"
-        :data="data.ExtraCurricular"
-    />
+<!--    <ShowCaseSection-->
+<!--        :section="Section.ExtraCurricular"-->
+<!--        name="ExtraCurricular"-->
+<!--        :data="data.ExtraCurricular"-->
+<!--    />-->
     <Legal />
     <CodeLine />
     <Privacy />
