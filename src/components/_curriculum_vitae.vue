@@ -13,11 +13,8 @@
       <span class="keyword" v-if="isTs">:</span>
       <span class="white-space space"></span>
       <span class="expression" v-if="isTs">(</span>
-      <span class="type class" v-if="isTs">Job</span>
-      <span class="white-space space" v-if="isTs"></span>
-      <span class="keyword" v-if="isTs">|</span>
-      <span class="white-space space" v-if="isTs"></span>
-      <span class="type class" v-if="isTs">Education</span>
+      <span class="type class" v-if="isTs && data[0].company">Job</span>
+      <span class="type class" v-if="isTs && data[0].university">Education</span>
       <span class="expression" v-if="isTs">)[]</span>
       <span class="white-space space" v-if="isTs"></span>
       <span class="expression">=</span>
