@@ -226,7 +226,7 @@ export const skills: SkillSet[] = [
 export const experience: Job[] = [
   {
     company: 'Qualcomm',
-    position: `Senior Software Developer.`,
+    position: `Senior Software Developer`,
     startsAt: new Date('2019-08-19'),
     endsAt: undefined,
   }

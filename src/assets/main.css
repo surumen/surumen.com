@@ -87,6 +87,11 @@
 .legal.collapsed, .skillset.collapsed, .stage.collapsed {
   cursor: s-resize;
 }
+
+.stage.collapsed .line {
+  height: auto !important;
+}
+
 .section .collapsible {
   max-width: 0;
   opacity: 0;
