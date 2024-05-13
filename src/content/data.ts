@@ -24,6 +24,7 @@ export const postalCode = 'CA'
 export const city = 'San Diego'
 export const emails: string[] = ['msurumen@berkeley.edu']
 export const socialNetworks: { [key: string]: string } = {
+  projects: 'https://projects.surumen.com/',
   github: 'https://github.com/surumen',
   linkedin: 'https://www.linkedin.com/in/mosessurumen'
 }
